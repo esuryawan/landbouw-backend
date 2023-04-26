@@ -1,0 +1,42 @@
+{
+	"name": "landbouw-backend",
+	"version": "1.0.0",
+	"description": "Backend for Landbouw High School",
+	"type": "module",
+	"main": "index.ts",
+	"scripts": {
+		"build": "rimraf build && tsc",
+		"start": "rimraf build && tsc && node build/index.js",
+		"dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts"
+	},
+	"author": "Erick Suryawan (1993)",
+	"license": "ISC",
+	"dependencies": {
+		"ababil-activity": "1.0.0",
+		"ababil-landbouw": "1.0.0",
+		"ababil-logger": "1.0.0",
+		"ababil-utils": "1.0.3",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"google-auth-library": "^8.7.0",
+		"helmet": "^6.0.1",
+		"jsonwebtoken": "^9.0.0",
+		"multer": "1.4.5-lts.1",
+		"mysql2": "^3.2.0",
+		"nodemon": "^2.0.22",
+		"path": "^0.12.7",
+		"sequelize": "^6.30.0",
+		"url": "^0.11.0"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.13",
+		"@types/express": "^4.17.17",
+		"@types/jsonwebtoken": "^9.0.1",
+		"@types/multer": "^1.4.7",
+		"@types/mysql": "^2.15.21",
+		"@types/node": "^18.15.11",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.0.3"
+	}
+}
